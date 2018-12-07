@@ -1,4 +1,6 @@
 {
     "application_name": "Your Application",
-    "package_name": "yourapplication"
+    "package_name": "yourapplication",
+    "image_author": "yourname",
+    "image_author_email": "youremail"
 }

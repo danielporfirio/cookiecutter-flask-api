@@ -1,6 +1,6 @@
 FROM python:3.6.5-slim
 
-LABEL Author="Daniel Porfiiro 'me@danielporfirio.com'"
+LABEL Author="{{cookiecutter.image_author}} '{{cookiecutter.image_author_email}}'"
 
 ENV ENVIRONMENT 'development'
 
@@ -13,4 +13,4 @@ RUN pip3 install --upgrade pip \
 
 EXPOSE 8000
 
-ENTRYPOINT ["/usr/local/bin/gunicorn", "-b", ":8000", "app:create_app()"]
+ENTRYPOINT ["/usr/local/bin/gunicorn", "-b", ":8000", "{{cookiecutter.package_name}}:create_app()"]

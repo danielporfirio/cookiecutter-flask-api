@@ -5,5 +5,4 @@ clean:
 
 test: clean
 	cookiecutter . --output-dir /tmp --no-input && \
-	cd /tmp/yourapplication && \
-	make test
+	cd /tmp/yourapplication
