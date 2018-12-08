@@ -26,7 +26,7 @@ local: venv
 	@$(BIN)/pip3 install -r requirements/dev.txt
 
 run:
-	FLASK_CONFIG="default" FLASK_ENV="development" FLASK_APP="yourapplication:create_app('development')" $(BIN)/flask run
+	FLASK_CONFIG="default" FLASK_ENV="development" FLASK_APP="{{ cookiecutter.package_name }}:create_app('development')" $(BIN)/flask run
 
 tests:
 	@$(BIN)/py.test -x tests/

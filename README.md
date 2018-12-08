@@ -20,3 +20,7 @@ cd yourapplication
 make run
 ```
 And then open it at http://127.0.0.1:5000/
+
+
+
+Made with &#9829; to you.

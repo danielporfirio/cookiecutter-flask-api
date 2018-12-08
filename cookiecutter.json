@@ -1,6 +1,8 @@
 {
-    "application_name": "Your Application",
-    "package_name": "yourapplication",
-    "image_author": "yourname",
-    "image_author_email": "youremail"
+    "full_name": "Your name",
+    "email": "yourname@domain.com",
+    "project_name": "Your project",
+    "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '_') }}",
+    "project_short_description": "{{ cookiecutter.project_slug }} is a simple API for ...",
+    "pkg_name": "{{ cookiecutter.project_slug }}"
 }

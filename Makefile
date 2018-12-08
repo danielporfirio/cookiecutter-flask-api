@@ -1,8 +1,8 @@
 all: test
 
 clean:
-	rm -rf /tmp/yourapplication/
+	rm -rf /tmp/your_project
 
 test: clean
 	cookiecutter . --output-dir /tmp --no-input && \
-	cd /tmp/yourapplication
+	cd /tmp/your_project

@@ -1,8 +1,8 @@
 import unittest
 import json
 
-from {{cookiecutter.package_name}} import create_app, db
-from {{cookiecutter.package_name}}.models import Person, Job
+from {{cookiecutter.pkg_name}} import create_app, db
+from {{cookiecutter.pkg_name}}.models import Person, Job
 
 
 class Base(unittest.TestCase):

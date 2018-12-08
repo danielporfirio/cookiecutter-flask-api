@@ -16,7 +16,7 @@ def create_app(config_name=None):
 
     app.config.from_object(cfg[config_name])
 
-    health = HealthCheck(app, _VERSION+'/healthcheck')
+    health = HealthCheck(app, _VERSION + '/healthcheck')
 
     from .api import api as api_blueprint
     app.register_blueprint(api_blueprint, url_prefix=_VERSION)

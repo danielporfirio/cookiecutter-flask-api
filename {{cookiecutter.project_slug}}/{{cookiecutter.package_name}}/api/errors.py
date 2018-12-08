@@ -1,5 +1,5 @@
 from flask import jsonify
-from {{cookiecutter.package_name}}.exceptions import ValidationError
+from {{cookiecutter.pkg_name}}.exceptions import ValidationError
 from . import api
 
 

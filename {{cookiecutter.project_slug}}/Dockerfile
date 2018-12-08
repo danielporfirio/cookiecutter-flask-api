@@ -1,6 +1,6 @@
 FROM python:3.6.5-slim
 
-LABEL Author="{{cookiecutter.image_author}} '{{cookiecutter.image_author_email}}'"
+LABEL Author="{{cookiecutter.full_name}} '{{cookiecutter.email}}'"
 
 ENV ENVIRONMENT 'development'
 
